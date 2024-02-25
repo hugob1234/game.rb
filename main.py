@@ -1,6 +1,6 @@
 def play_game
   puts "Welcome to the game of Rock, Paper, Scissors!"
-  puts "Enter option(play/end):"
+  puts "Enter option (play/end):"
   start = gets.chomp()
 
   if start == "end"
@@ -14,9 +14,15 @@ def play_game
   while game != 3
     array = ["rock","paper","scissors"]
     computer = array.sample()
-    puts "Enter option(rock/paper/scissors): "
+    puts "Enter option (rock/paper/scissors): "
     player = gets.chomp()
-    game +=1
+
+    if player != "rock" && player != "paper" && player != "scissors"
+      puts "Invalid option"
+      next
+    end
+
+    game += 1
 
     if computer == player
       puts "It's a tie"
@@ -27,10 +33,9 @@ def play_game
     else
       puts "You won!!"
     end
-
-    puts "Good game"
-    guess = true
   end
+
+  puts "Good game"
 end
 
 play_game
