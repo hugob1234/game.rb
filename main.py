@@ -21,13 +21,13 @@ while start != "end" and !guess
         puts "Computer won"
     elsif computer == "scissors" and player == "paper"
         puts "Computer won"
-  
+
     else
         puts "You won!!"
-      break
+  break
     end
 end
-if guess == true
+if guess == true or start == "end"
     puts "Adios"
 else
     puts "Good game"
