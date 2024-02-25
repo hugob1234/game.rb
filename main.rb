@@ -8,7 +8,6 @@ def play_game
     return
   end
 
-  guess = false
   game = 0
 
   while game != 3
