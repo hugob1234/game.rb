@@ -26,8 +26,8 @@ def play_game
 
     if computer == player
       puts "It's a tie"
-    elsif (computer == "rock" && player == "scissors") ||
-         (computer == "paper" && player == "rock") ||
+    elsif (computer == "rock" and player == "scissors") 
+         (computer == "paper" and player == "rock") 
          (computer == "scissors" && player == "paper")
       puts "Computer won"
     else
