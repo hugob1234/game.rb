@@ -17,7 +17,7 @@ def play_game
     puts "Enter option (rock/paper/scissors): "
     player = gets.chomp()
 
-    if player != "rock" && player != "paper" && player != "scissors"
+    if player != "rock" and  player != "paper" and player != "scissors"
       puts "Invalid option"
       next
     end
@@ -26,9 +26,9 @@ def play_game
 
     if computer == player
       puts "It's a tie"
-    elsif (computer == "rock" and player == "scissors") 
-         (computer == "paper" and player == "rock") 
-         (computer == "scissors" and player == "paper")
+    elsif (computer == "rock" && player == "scissors") ||
+         (computer == "paper" && player == "rock") ||
+         (computer == "scissors" && player == "paper")
       puts "Computer won"
     else
       puts "You won!!"
